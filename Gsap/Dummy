@@ -1,0 +1,64 @@
+var box = ('.box-green');
+var complete = function () {
+    gsap.to(".box-green", {rotation: -100, x: -5, duration: 3});
+
+gsap.to(".box-red", {rotation: -100, x: -5, duration: 3});
+
+gsap.to(".box-orange", {rotation: -100, x: -5, duration: 3});
+
+};
+
+var roll = function (){
+gsap.to(".box-green", {rotation: 100, x: 100, duration: 1});
+
+gsap.to(".box-red", {rotation: 100 , x: 100, duration: 1});
+
+gsap.to(".box-orange", {rotation: 100, x: 100, duration: 1});
+};
+
+var down = function (){
+    gsap.to(".box-green", {rotation: 50, y: 100, duration: 1});
+    
+    gsap.to(".box-red", {rotation: 50 , y: 100, duration: 1});
+    
+    gsap.to(".box-orange", {rotation: 50, y: 100, duration: 1});
+    };
+    
+
+TweenMax.to(box, 1, { onComplete: roll});
+TweenMax.to(box, 3, { onComplete: complete});
+TweenMax.to(box, 7, { onComplete: down});
+
+  
+TweenMax.to(graph, 2.5, { ease: Power4.easeOut, y: -500 });
+
+gsap.to(".box", 1, {
+    
+        scale: 0.1, 
+    
+        y: 60,
+    
+        yoyo: true, 
+    
+        repeat: -1, 
+    
+        ease: "power1.inOut",
+    
+        delay:1,
+    
+        stagger: {
+    
+          amount: 1.5, 
+    
+          grid: "auto",
+    
+          from: "center"
+    
+        }
+    
+      });
+
+
+      
+TweenMax.to(l, 1, {onComplete: j});
+TweenMax.to(nav, 2, {onComplete: k});
